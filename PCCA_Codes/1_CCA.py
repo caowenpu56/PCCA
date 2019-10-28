@@ -112,7 +112,7 @@ if __name__ == '__main__':
 			for cIndex in pccaClusters[thres]:
 				if cIndex not in pccaClusterAreas[thres]:
 					pccaClusterAreas[thres][cIndex] = 0
-				for (i, j) in pccaClusters[cIndex]:
+				for (i, j) in pccaClusters[thres][cIndex]:
 					lat = (topX + (i + 0.5) * pixelHeight) * pi / 180.0
 					unitArea = countSpheroidArea(lat=lat, dLat=dLat, dLng=dLng)
 					pccaClusterAreas[thres][cIndex] = pccaClusterAreas[thres][cIndex] + unitArea

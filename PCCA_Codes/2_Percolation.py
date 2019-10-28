@@ -105,7 +105,7 @@ if __name__ == '__main__':
 
 	# road network
 	dataItem = 'CHN_JuncDensity'
-	fr = open('%s%s/pccaAreas' % (dataPath, dataItem), 'rb')
+	fr = open('%s%s_pccaAreas' % (dataPath, dataItem), 'rb')
 	pccaClusterAreas = pickle.load(fr)
 	fr.close()
 
@@ -182,7 +182,7 @@ if __name__ == '__main__':
 
 	# nighttime light
 	dataItem = 'CHN_VIIRS2016'
-	fr = open('%s%s/pccaAreas' % (dataPath, dataItem), 'rb')
+	fr = open('%s%s_pccaAreas' % (dataPath, dataItem), 'rb')
 	pccaClusterAreas = pickle.load(fr)
 	fr.close()
 
@@ -193,7 +193,7 @@ if __name__ == '__main__':
 	largeEntropys = []
 
 	for t in sorted(list(pccaClusterAreas.keys())):
-		if t > 200:
+		if t > 20:
 			continue
 		thres.append(t)
 
