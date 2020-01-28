@@ -8,5 +8,6 @@ Quantifying urban areas is crucial for addressing associated urban issues such a
 - Raw_Data: Raw data (population, road, nightime light) in China.
 - PCCA_Codes: Python codes to replicate the results of the paper.
 - Urban_Results: Maps of urban areas delimited by PCCA.
+- Validation_Data: Landsat-based urban reference maps, 0: Non-urban, 1: Urban, -999: Outside the city boundary.
 
 Contact: caowenpu56@gmail.com
